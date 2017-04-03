@@ -1,6 +1,7 @@
 using FluentAssertions;
 using NSubstitute;
 using Sitecore.Abstractions;
+using Sitecore.AutoFixture.NSubstitute;
 using Sitecore.Data;
 using Sitecore.Data.Items;
 using Xunit;
