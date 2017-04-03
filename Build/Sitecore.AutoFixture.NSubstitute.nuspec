@@ -1,0 +1,28 @@
+ <?xml version="1.0"?>
+ <package>
+     <metadata>
+      <id>Sitecore.AutoFixture.NSubstitute</id>
+      <version>1.0.0</version>
+      <title>Sitecore AutoFixture NSubstitute</title>
+      <authors>istern</authors>
+      <owners>istern</owners>
+      <licenseUrl>https://github.com/istern/Sitecore.AutoFixture.NSubstitute/blob/master/License.md</licenseUrl>
+      <projectUrl>https://github.com/istern/Sitecore.AutoFixture.NSubstitute</projectUrl>
+      <iconUrl></iconUrl>
+      <requireLicenseAcceptance>false</requireLicenseAcceptance>
+      <description>Framework to help Creating Autodata when unit testing Sitecore</description>
+      <releaseNotes>Initial Release.</releaseNotes>
+      <copyright>Copyright 2017</copyright>
+      <tags>Sitecore, Unit Testing</tags>
+     </metadata>
+    <dependencies>
+     <dependency id="AutoFixture" version="3.50.2" />
+     <dependencyd id="AutoFixture.AutoNSubstitute" version="3.50.2" /> 
+     <dependencyd id="AutoFixture.Xunit2" version="3.50.2"  /> 
+     <dependency id="NSubstitute" version="2.0.2" />
+     <dependency id="xunit" version="2.2.0" />
+    </dependencies>
+    <files>
+     <file src="..\Src\Sitecore.AutoFixture.NSubstitute\bin\Release\Sitecore.AutoFixture.NSubstitute.dll" target="lib\net40" />
+    </files>
+ </package>
