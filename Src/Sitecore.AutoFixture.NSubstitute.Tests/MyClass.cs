@@ -2,7 +2,7 @@
 using Sitecore.Data;
 using Sitecore.Data.Items;
 
-namespace Sitecore.AutoFixture.NSubstitute
+namespace Sitecore.AutoFixture.NSubstitute.Tests
 {
     public class MyClass
     {

@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26228.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.AutoFixture.NSubstitute", "Src\Sitecore.AutoFixture.NSubstitute\Sitecore.AutoFixture.NSubstitute.csproj", "{ADEF9F45-8C01-4970-9527-0109C43CF0C9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.AutoFixture.NSubstitute.Tests", "Src\Sitecore.AutoFixture.NSubstitute.Tests\Sitecore.AutoFixture.NSubstitute.Tests.csproj", "{B8F962B0-A2B2-4B94-8759-48DBCCF71B1E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{ADEF9F45-8C01-4970-9527-0109C43CF0C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ADEF9F45-8C01-4970-9527-0109C43CF0C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ADEF9F45-8C01-4970-9527-0109C43CF0C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8F962B0-A2B2-4B94-8759-48DBCCF71B1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8F962B0-A2B2-4B94-8759-48DBCCF71B1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8F962B0-A2B2-4B94-8759-48DBCCF71B1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8F962B0-A2B2-4B94-8759-48DBCCF71B1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

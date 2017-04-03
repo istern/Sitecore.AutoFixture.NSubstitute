@@ -1,12 +1,12 @@
 using FluentAssertions;
 using NSubstitute;
 using Sitecore.Abstractions;
-using Sitecore.AutoFixture.NSubstitute;
 using Sitecore.Data;
 using Sitecore.Data.Items;
+
 using Xunit;
 
-namespace Sitecore.AutoFixture.NSubstitute
+namespace Sitecore.AutoFixture.NSubstitute.Tests
 {
     public class MyClassTests
     {
@@ -28,7 +28,7 @@ namespace Sitecore.AutoFixture.NSubstitute
             returnItem.Name.Should().BeEquivalentTo(childItem.Name);
             rootItem.Add(Arg.Any<string>(), Arg.Any<TemplateID>()).Received();
             database.GetItem("/sitecore/content/home").Received();
-
+           
         }
     }
 }
