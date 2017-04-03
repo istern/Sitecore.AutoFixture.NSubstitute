@@ -10,6 +10,7 @@
 !/www/Components
 /Data/logs
 
+
 /www/**/*.[Cc]ache
 /www/Components/Aeldresagen/Project/Design/Dist/*
 /www/Components/DesignGuide/Project/Design/Dist/*
@@ -246,16 +247,7 @@ ModelManifest.xml
 #Editor files
 .idea
 .nuget/NuGet.exe
-Sitecore.Support.398622.dll
-Solr/development/
-Solr/preproduction/
-Solr/production/
-Tests/App.config
-Thumbs.db
-WFFM 8 1 Update-1 Upgrade Guide.pdf
+
 readme.md
 readme.txt
 
-/www/default.htm.sitedown
-/www/Components/Aeldresagen/Project/Design/Dist
-/www/Components/DesignGuide/Project/Design/Dist
