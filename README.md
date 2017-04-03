@@ -1,7 +1,7 @@
 # Sitecore AutoFixture With NSubstitute
 This Library helps you writing unit test for Sitecore. It dependens on Sitecore 8.2+, from this version Sitecore introduced more abstractions which allowed for even easier unit test to written.
 
-## Depencies
+## Dependencies
 [NSubstitute](http://nsubstitute.github.io/)
 [Autofixture](https://github.com/AutoFixture/AutoFixture)
 [XUnit](https://xunit.github.io/)
