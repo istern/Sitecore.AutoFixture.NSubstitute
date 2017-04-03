@@ -8,7 +8,7 @@
       <owners>istern</owners>
       <licenseUrl>https://github.com/istern/Sitecore.AutoFixture.NSubstitute/blob/master/License.md</licenseUrl>
       <projectUrl>https://github.com/istern/Sitecore.AutoFixture.NSubstitute</projectUrl>
-      <iconUrl></iconUrl>
+      <!--<iconUrl></iconUrl>-->
       <requireLicenseAcceptance>false</requireLicenseAcceptance>
       <description>Framework to help Creating Autodata when unit testing Sitecore</description>
       <releaseNotes>Initial Release.</releaseNotes>
