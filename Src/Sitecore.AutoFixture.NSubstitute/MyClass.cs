@@ -2,12 +2,11 @@
 using Sitecore.Data;
 using Sitecore.Data.Items;
 
-namespace SitecoreAutofixture.NSubstitute
+namespace Sitecore.AutoFixture.NSubstitute
 {
     public class MyClass
     {
         private readonly IFactory _factory;
-
         public MyClass(IFactory factory)
         {
             _factory = factory;
@@ -19,7 +18,5 @@ namespace SitecoreAutofixture.NSubstitute
             Item childItem = rootItem.Add("child", new TemplateID(ID.NewID));
             return childItem;
         }
-
-        
     }
 }

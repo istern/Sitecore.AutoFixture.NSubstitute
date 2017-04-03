@@ -1,7 +1,7 @@
 ﻿using Ploeh.AutoFixture;
 using Ploeh.AutoFixture.Xunit2;
 
-namespace SitecoreAutofixture.NSubstitute
+namespace Sitecore.AutoFixture.NSubstitute
 {
     public class AutoSitecoreDataAttribute : AutoDataAttribute
     {

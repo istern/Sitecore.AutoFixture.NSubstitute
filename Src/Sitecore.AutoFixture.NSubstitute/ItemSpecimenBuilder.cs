@@ -4,7 +4,7 @@ using Sitecore.Data;
 using Sitecore.Data.Items;
 using Sitecore.Globalization;
 
-namespace SitecoreAutofixture.NSubstitute
+namespace Sitecore.AutoFixture.NSubstitute
 {
     public class ItemSpecimentBuilder : ISpecimenBuilder
     {

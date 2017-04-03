@@ -2,7 +2,7 @@
 using Ploeh.AutoFixture.Kernel;
 using Sitecore.Abstractions;
 
-namespace SitecoreAutofixture.NSubstitute
+namespace Sitecore.AutoFixture.NSubstitute
 {
     public class FactorySpecimentBuilder : ISpecimenBuilder
     {

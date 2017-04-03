@@ -2,7 +2,7 @@
 using Ploeh.AutoFixture.Kernel;
 using Sitecore.Data;
 
-namespace SitecoreAutofixture.NSubstitute
+namespace Sitecore.AutoFixture.NSubstitute
 {
     public class DatabaseSpecimentBuilder : ISpecimenBuilder
     {
