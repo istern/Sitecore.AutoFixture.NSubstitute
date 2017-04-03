@@ -10,7 +10,7 @@ namespace Sitecore.AutoFixture.NSubstitute
         {
             if (!typeof(ISettings).Equals(request))
             {
-                return new NoSpecimen(request);
+                return new NoSpecimen();
             }
 
 

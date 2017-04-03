@@ -10,7 +10,7 @@ namespace Sitecore.AutoFixture.NSubstitute
         {
             if (!typeof(Database).Equals(request))
             {
-                return new NoSpecimen(request);
+                return new NoSpecimen();
             }
 
             var database = Substitute.For<Database>();

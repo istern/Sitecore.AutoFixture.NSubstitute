@@ -14,7 +14,7 @@ namespace Sitecore.AutoFixture.NSubstitute
         {
             if (!typeof(Item).Equals(request))
             {
-                return new NoSpecimen(request);
+                return new NoSpecimen();
             }
             
             var itemId = ID.NewID;

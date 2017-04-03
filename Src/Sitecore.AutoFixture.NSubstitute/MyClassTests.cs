@@ -5,7 +5,7 @@ using Sitecore.Data;
 using Sitecore.Data.Items;
 using Xunit;
 
-namespace SitecoreAutofixture.NSubstitute
+namespace Sitecore.AutoFixture.NSubstitute
 {
     public class MyClassTests
     {
