@@ -12,8 +12,9 @@ This Library helps you writing unit test for Sitecore. It dependens on Sitecore 
 In your test project you must refrence Sitecore.Kernel version 8.2+ NOT THE NO REFERENCE version you will need the full version. Simply get it from the offcial Sitecore nuget feed.
 With that reference solved simply add this nuget package
 
+```sh
 Install-Package Sitecore.AutoFixture.NSubstitute
-
+```
 
 ## Example
 Given the following class which adds an Item to root Item in Sitecore
