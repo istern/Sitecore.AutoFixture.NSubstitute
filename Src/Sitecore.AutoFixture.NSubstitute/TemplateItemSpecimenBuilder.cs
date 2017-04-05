@@ -7,11 +7,11 @@ using Sitecore.Globalization;
 
 namespace Sitecore.AutoFixture.NSubstitute
 {
-    public class ItemSpecimentBuilder : ISpecimenBuilder
+    public class TemplateItemSpecimenBuilder : ISpecimenBuilder
     {
         public object Create(object request, ISpecimenContext context)
         {
-            if (!typeof(Item).Equals(request))
+            if (!typeof(TemplateItem).Equals(request))
             {
                 return new NoSpecimen();
             }
@@ -22,10 +22,10 @@ namespace Sitecore.AutoFixture.NSubstitute
             var definition = new ItemDefinition(itemId, generatedItemName, ID.NewID, ID.NewID);
             var data = new ItemData(definition, language, Sitecore.Data.Version.First, new FieldList());
             var database = Substitute.For<Database>();
-            var item = Substitute.For<Item>(itemId, data, database);
-            item.Name = generatedItemName;
-
-            return item;
+            var innerItem = Substitute.For<Item>(itemId, data, database);
+            innerItem.Name = generatedItemName;
+            var templateItem = Substitute.For<TemplateItem>(innerItem);
+            return templateItem;
         }
     }
 }

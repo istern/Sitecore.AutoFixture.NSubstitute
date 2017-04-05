@@ -108,6 +108,7 @@
     <Compile Include="AutoSitecoreCustomization.cs" />
     <Compile Include="DatabaseSpecimentBuilder.cs" />
     <Compile Include="FactorySpecimentBuilder.cs" />
+    <Compile Include="TemplateItemSpecimenBuilder.cs" />
     <Compile Include="ItemSpecimenBuilder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SettingsSpecimentBuilder.cs" />
