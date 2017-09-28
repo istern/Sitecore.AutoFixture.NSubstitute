@@ -15,6 +15,7 @@ namespace Sitecore.AutoFixture.NSubstitute
             fixture.Customizations.Add(new CompositeSpecimenBuilder(new ItemSpecimentBuilder()));
             fixture.Customizations.Add(new CompositeSpecimenBuilder(new FactorySpecimentBuilder()));
             fixture.Customizations.Add(new CompositeSpecimenBuilder(new SettingsSpecimentBuilder()));
+            fixture.Customizations.Add(new CompositeSpecimenBuilder(new ItemDataSpecimentBuilder()));
         }
 
     }

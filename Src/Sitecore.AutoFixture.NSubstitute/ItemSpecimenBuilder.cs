@@ -1,4 +1,6 @@
 using System;
+using System.Linq;
+using System.Reflection;
 using NSubstitute;
 using Ploeh.AutoFixture.Kernel;
 using Sitecore.Data;
@@ -15,7 +17,7 @@ namespace Sitecore.AutoFixture.NSubstitute
             {
                 return new NoSpecimen();
             }
-
+          
             string generatedItemName = Guid.NewGuid().ToString("N");
             var itemId = ID.NewID;
             var language = Substitute.For<Language>();

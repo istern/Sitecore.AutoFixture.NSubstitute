@@ -62,3 +62,21 @@ public class MyClassTests
         }
     }
 ```
+Defining itemdata as parameters ,ie. so you easily can create items with specific itemname, itemid or templateid                    
+```csharp
+ public class MyClass
+    {
+         [Theory, AutoSitecoreData]
+        public void MyClass_AddItemInMethod_ShouldGiveCorrectValues([ItemData(itemId:"{bc3f06c9-cac5-433c-ab31-4fa1a149754b}",
+                                                                     templateId:"{65ba5663-93af-427f-b579-5f361d6f5c93}",
+                                                                     name:"Home")] Item item)
+        {
+
+            //Assert
+            item.ID.ShouldBeEquivalentTo(ID.Parse("{bc3f06c9-cac5-433c-ab31-4fa1a149754b}"));
+            item.Name.ShouldBeEquivalentTo("Home");
+            item.TemplateID.ShouldBeEquivalentTo(ID.Parse("{65ba5663-93af-427f-b579-5f361d6f5c93}"));
+
+        }
+    }
+```
