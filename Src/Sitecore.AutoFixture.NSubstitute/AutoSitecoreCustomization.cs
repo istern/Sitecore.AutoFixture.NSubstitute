@@ -1,9 +1,10 @@
-﻿using Ploeh.AutoFixture;
-using Ploeh.AutoFixture.Kernel;
+﻿using AutoFixture;
+using AutoFixture.Kernel;
+
 
 namespace Sitecore.AutoFixture.NSubstitute
 {
-    public class AutoSitecoreCustomization : ICustomization
+    public class AutoSitecoreCustomization 
     {
         /// <summary>
         /// Customizes the specified fixture by adding the Sitecore specific specimen builders.

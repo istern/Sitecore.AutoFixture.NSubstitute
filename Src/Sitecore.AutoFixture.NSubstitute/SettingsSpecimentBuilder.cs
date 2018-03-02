@@ -1,5 +1,5 @@
-﻿using NSubstitute;
-using Ploeh.AutoFixture.Kernel;
+﻿using AutoFixture.Kernel;
+using NSubstitute;
 using Sitecore.Abstractions;
 
 namespace Sitecore.AutoFixture.NSubstitute

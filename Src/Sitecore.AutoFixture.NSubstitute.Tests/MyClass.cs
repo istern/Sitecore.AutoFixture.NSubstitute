@@ -6,8 +6,8 @@ namespace Sitecore.AutoFixture.NSubstitute.Tests
 {
     public class MyClass
     {
-        private readonly IFactory _factory;
-        public MyClass(IFactory factory)
+        private readonly BaseFactory _factory;
+        public MyClass(BaseFactory factory)
         {
             _factory = factory;
         }

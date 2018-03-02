@@ -13,7 +13,7 @@ namespace Sitecore.AutoFixture.NSubstitute.Tests
     public class MyClassTests
     {
         [Theory, AutoSitecoreData]
-        public void MyClass_AddItemToWithAutoFixtureRoot_ShouldReturnItem(Item rootItem, Item childItem, Database database, IFactory factory)
+        public void MyClass_AddItemToWithAutoFixtureRoot_ShouldReturnItem(Item rootItem, Item childItem, Database database, BaseFactory factory)
         {
             //Arrange
             database.GetItem("/sitecore/content/home").Returns(rootItem);
@@ -36,7 +36,7 @@ namespace Sitecore.AutoFixture.NSubstitute.Tests
         }
 
         [Theory, AutoSitecoreData]
-        public void MyClass_AddItemToWithTempalteWithAutoFixtureRoot_ShouldReturnItem(Item rootItem, Item childItem, TemplateItem template, Database database, IFactory factory)
+        public void MyClass_AddItemToWithTempalteWithAutoFixtureRoot_ShouldReturnItem(Item rootItem, Item childItem, TemplateItem template, Database database, BaseFactory factory)
         {
 
 
@@ -58,7 +58,7 @@ namespace Sitecore.AutoFixture.NSubstitute.Tests
             returnItem["test"] = "T";
             //Assert
             returnItem.Should().NotBeNull();
-            rootItem["title"].ShouldAllBeEquivalentTo("parent");
+            rootItem["title"].Should().BeEquivalentTo(("parent"));
             returnItem.ID.Should().BeSameAs(childItem.ID);
             returnItem.Name.Should().BeEquivalentTo(childItem.Name);
             rootItem.Add(childItem.Name, template).Received();
@@ -70,18 +70,16 @@ namespace Sitecore.AutoFixture.NSubstitute.Tests
         }
 
 
-        [Theory, AutoSitecoreData]
+        [Theory,AutoSitecoreData]
         public void MyClass_AddItemInMethod_ShouldGiveCorrectValues([ItemData(itemId:"{bc3f06c9-cac5-433c-ab31-4fa1a149754b}",
                                                                      templateId:"{65ba5663-93af-427f-b579-5f361d6f5c93}",
                                                                      name:"Home")] Item item)
         {
 
-
-
             //Assert
-            item.ID.ShouldBeEquivalentTo(ID.Parse("{bc3f06c9-cac5-433c-ab31-4fa1a149754b}"));
-            item.Name.ShouldBeEquivalentTo("Home");
-            item.TemplateID.ShouldBeEquivalentTo(ID.Parse("{65ba5663-93af-427f-b579-5f361d6f5c93}"));
+            item.ID.Should().BeEquivalentTo(ID.Parse("{bc3f06c9-cac5-433c-ab31-4fa1a149754b}"));
+            item.Name.Should().BeEquivalentTo(("Home"));
+            item.TemplateID.Should().BeEquivalentTo((ID.Parse("{65ba5663-93af-427f-b579-5f361d6f5c93}")));
 
         }
     }

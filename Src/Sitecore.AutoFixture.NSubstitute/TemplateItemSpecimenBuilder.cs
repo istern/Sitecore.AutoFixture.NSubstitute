@@ -1,6 +1,7 @@
 using System;
+using AutoFixture.Kernel;
 using NSubstitute;
-using Ploeh.AutoFixture.Kernel;
+
 using Sitecore.Data;
 using Sitecore.Data.Items;
 using Sitecore.Globalization;

@@ -1,5 +1,5 @@
-﻿using NSubstitute;
-using Ploeh.AutoFixture.Kernel;
+﻿using AutoFixture.Kernel;
+using NSubstitute;
 using Sitecore.Abstractions;
 
 namespace Sitecore.AutoFixture.NSubstitute
@@ -8,13 +8,13 @@ namespace Sitecore.AutoFixture.NSubstitute
     {
         public object Create(object request, ISpecimenContext context)
         {
-            if (!typeof(IFactory).Equals(request))
+            if (!typeof(BaseFactory).Equals(request))
             {
                 return new NoSpecimen();
             }
 
            
-            var factory = Substitute.For<IFactory>();
+            var factory = Substitute.For<BaseFactory>();
             return factory;
         }
     }
