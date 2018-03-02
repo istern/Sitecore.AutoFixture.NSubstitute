@@ -9,7 +9,7 @@ This Library helps you writing unit test for Sitecore. It dependens on Sitecore 
 [XUnit](https://xunit.github.io/)
 
 ## Howto
-In your test project you must refrence Sitecore.Kernel version 8.2+ and use version 1.x of this modules. From Sitecore 9 an forward you should use version 2.x of this module  NOT THE NO REFERENCE version you will need the full version. Simply get it from the offcial Sitecore nuget feed.
+In your test project you must refrence Sitecore.Kernel version 8.2+ and use version 1.x of this modules. From Sitecore 9 an forward you should use version 2.x of this module  NOT THE NO REFERENCE version you will need the full version. Likewise with a reference to Sitecore.Logging this however can be the no reference. Simply get them from the offcial Sitecore nuget feed.
 With that reference solved simply add this nuget package
 
 ```sh
