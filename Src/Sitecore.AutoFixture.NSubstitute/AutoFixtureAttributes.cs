@@ -9,13 +9,15 @@ namespace Sitecore.AutoFixture.NSubstitute
     {
         private static Func<IFixture> fixtureFactory = () =>
         {
-          var fixture = new Fixture();
-          fixture.Customizations.Add(new CompositeSpecimenBuilder(new DatabaseSpecimentBuilder()));
-          fixture.Customizations.Add(new CompositeSpecimenBuilder(new ItemSpecimentBuilder()));
-          fixture.Customizations.Add(new CompositeSpecimenBuilder(new FactorySpecimentBuilder()));
-          fixture.Customizations.Add(new CompositeSpecimenBuilder(new SettingsSpecimentBuilder()));
-          fixture.Customizations.Add(new CompositeSpecimenBuilder(new ItemDataSpecimentBuilder()));
-          return fixture;
+            var fixture = new Fixture();
+            fixture.Customizations.Add(new CompositeSpecimenBuilder(new DatabaseSpecimentBuilder()));
+            fixture.Customizations.Add(new CompositeSpecimenBuilder(new ItemSpecimentBuilder()));
+            fixture.Customizations.Add(new CompositeSpecimenBuilder(new FactorySpecimentBuilder()));
+            fixture.Customizations.Add(new CompositeSpecimenBuilder(new SettingsSpecimentBuilder()));
+            fixture.Customizations.Add(new CompositeSpecimenBuilder(new ItemDataSpecimentBuilder()));
+            fixture.Customizations.Add(new CompositeSpecimenBuilder(new FieldCollectionSpecimentBuilder()));
+            fixture.Customizations.Add(new CompositeSpecimenBuilder(new FieldSpecimentBuilder()));
+            return fixture;
         };
 
 

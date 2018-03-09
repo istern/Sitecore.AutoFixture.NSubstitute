@@ -8,7 +8,7 @@ using Sitecore.Globalization;
 
 namespace Sitecore.AutoFixture.NSubstitute
 {
-    public class TemplateItemSpecimenBuilder : ISpecimenBuilder
+    public class TemplateItemSpecimentBuilder : ISpecimenBuilder
     {
         public object Create(object request, ISpecimenContext context)
         {

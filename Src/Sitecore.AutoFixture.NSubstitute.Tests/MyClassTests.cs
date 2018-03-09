@@ -70,7 +70,7 @@ namespace Sitecore.AutoFixture.NSubstitute.Tests
         }
 
 
-        [Theory,AutoSitecoreData]
+        [Theory, AutoSitecoreData]
         public void MyClass_AddItemInMethod_ShouldGiveCorrectValues([ItemData(itemId:"{bc3f06c9-cac5-433c-ab31-4fa1a149754b}",
                                                                      templateId:"{65ba5663-93af-427f-b579-5f361d6f5c93}",
                                                                      name:"Home")] Item item)
@@ -82,5 +82,23 @@ namespace Sitecore.AutoFixture.NSubstitute.Tests
             item.TemplateID.Should().BeEquivalentTo((ID.Parse("{65ba5663-93af-427f-b579-5f361d6f5c93}")));
 
         }
+
+
+
+        [Theory, AutoSitecoreData]
+        public void ShowInNavigationField(Item sourceItem, FieldCollection fields, Field checkboxField, string fieldname)
+        {
+            //arrange - Build expectations
+            checkboxField.Value.ReturnsForAnyArgs("1");
+            fields[fieldname].ReturnsForAnyArgs(checkboxField);
+            sourceItem.Fields.ReturnsForAnyArgs(fields);
+
+            //act
+            bool isShown = sourceItem.Fields[fieldname].Value == "1";
+
+            //Assert are expections fulfullid
+            isShown.Should().BeTrue();
+        }
+
     }
 }
