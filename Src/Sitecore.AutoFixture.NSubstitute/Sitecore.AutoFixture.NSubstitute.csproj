@@ -120,6 +120,7 @@
     <Compile Include="AutoSitecoreCustomization.cs" />
     <Compile Include="DatabaseSpecimentBuilder.cs" />
     <Compile Include="FactorySpecimentBuilder.cs" />
+    <Compile Include="FieldCollectionSpecimentBuilder.cs" />
     <Compile Include="FieldSpecimentBuilder.cs" />
     <Compile Include="ItemDataAttribute.cs" />
     <Compile Include="ItemDataSpecimentBuilder.cs" />
